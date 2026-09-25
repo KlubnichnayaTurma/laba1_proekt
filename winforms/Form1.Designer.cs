@@ -38,19 +38,21 @@
             button5 = new Button();
             button6 = new Button();
             button7 = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)SData).BeginInit();
             SuspendLayout();
             // 
             // StabilityLabel
             // 
             StabilityLabel.AutoSize = true;
-            StabilityLabel.Font = new Font("Wingdings", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 2);
+            StabilityLabel.Font = new Font("Microsoft Tai Le", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             StabilityLabel.ForeColor = Color.Ivory;
-            StabilityLabel.Location = new Point(361, 9);
+            StabilityLabel.Location = new Point(330, 9);
             StabilityLabel.Name = "StabilityLabel";
-            StabilityLabel.Size = new Size(135, 23);
+            StabilityLabel.Size = new Size(67, 26);
             StabilityLabel.TabIndex = 0;
             StabilityLabel.Text = "label1";
+            StabilityLabel.Click += StabilityLabel_Click;
             // 
             // SData
             // 
@@ -142,6 +144,16 @@
             button7.UseVisualStyleBackColor = false;
             button7.Click += Exit_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(706, 100);
+            button1.Name = "button1";
+            button1.Size = new Size(67, 67);
+            button1.TabIndex = 9;
+            button1.Text = "Гайд";
+            button1.UseVisualStyleBackColor = true;
+            button1.MouseClick += Guide_Click;
+            // 
             // formandq
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -149,6 +161,7 @@
             BackColor = SystemColors.Desktop;
             ClientSize = new Size(800, 650);
             ControlBox = false;
+            Controls.Add(button1);
             Controls.Add(button7);
             Controls.Add(button6);
             Controls.Add(button5);
@@ -180,5 +193,6 @@
         private Button button5;
         private Button button6;
         private Button button7;
+        private Button button1;
     }
 }

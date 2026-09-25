@@ -86,15 +86,7 @@ namespace ConsoleApp
                     case 3:
                         Console.Clear();
 
-                        Console.WriteLine("Введите новое имя:");
-                        string New_Name = Console.ReadLine();
-                        if (New_Name == "")
-                        {
-                            Console.Clear();
-                            Console.WriteLine("Нет.");
-                            Console.ReadLine();
-                            continue;
-                        }
+                        
                         Console.Clear();
                         Console.WriteLine("Какому Id присвоить?");
                         string ans = Console.ReadLine();
@@ -103,6 +95,15 @@ namespace ConsoleApp
                             Console.Clear();
 
                             Console.WriteLine("Введите число.");
+                            Console.ReadLine();
+                            continue;
+                        }
+                        Console.WriteLine("Введите новое имя:");
+                        string New_Name = Console.ReadLine();
+                        if (New_Name == "")
+                        {
+                            Console.Clear();
+                            Console.WriteLine("Нет.");
                             Console.ReadLine();
                             continue;
                         }
