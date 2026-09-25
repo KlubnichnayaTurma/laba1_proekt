@@ -109,7 +109,7 @@ namespace winforms
             {
                 MessageBox.Show("", "Пустота", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
-                
+
             }
             else
             {
@@ -141,7 +141,26 @@ namespace winforms
 
         private void Exit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (logic.SData().Count == 0)
+            {
+                MessageBox.Show("Безопасный выход из системы...", "", MessageBoxButtons.OK);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Они найдут вас.", "!!!!!!!!!!!!!!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.Close();
+            }
+        }
+
+        private void StabilityLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Guide_Click(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("1. Кнопка 'Добавить' позволяет задать имя сущности и добавить её в список. 2.Кнопка 'Удалить' позволяет удалить сущность по введённому Id. 3. кнопка 'Изменить' позволяет изменить имя сущности во введённому Id. 4. Кнопка 'Обновить' декарационная... 5. 'Разлом' - проверка сущностей на удачу, есть шанс умереть или пройти в следующее поколение и стать сильнее. 6. 'Стабилизация' уменьшает нестабильность, убивающую сущности. 7. кнопка 'Выход' закрывает программу ", "", MessageBoxButtons.OK);
         }
     }
 }
