@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22
+# Visual Studio Version 18
+VisualStudioVersion = 18.9.12128.139
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "logic", "laba1\logic.csproj", "{08F86396-80E3-4830-B7F6-68AAC20C4A1F}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winforms", "winforms\winforms.csproj", "{1E765504-5DA7-4D8F-9449-5CA14EE2035C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "model", "model\model.csproj", "{DCB61E3F-BDA4-4949-945D-3390440C5762}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{24CD4168-9E9B-4E31-979D-4C8B6C8E67DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{DCB61E3F-BDA4-4949-945D-3390440C5762}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCB61E3F-BDA4-4949-945D-3390440C5762}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCB61E3F-BDA4-4949-945D-3390440C5762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24CD4168-9E9B-4E31-979D-4C8B6C8E67DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24CD4168-9E9B-4E31-979D-4C8B6C8E67DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24CD4168-9E9B-4E31-979D-4C8B6C8E67DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24CD4168-9E9B-4E31-979D-4C8B6C8E67DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

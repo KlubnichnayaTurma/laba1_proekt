@@ -1,6 +1,8 @@
-﻿namespace laba1
+﻿
+
+namespace laba1
 {
-    public class Sushnost
+    public class Sushnost : IDomainObject
     {
         public String Name { get; set; }
         public int Id { get; set; }
