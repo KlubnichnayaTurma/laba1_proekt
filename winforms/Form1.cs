@@ -1,31 +1,30 @@
-using laba1;
+using logic.IoC;
+using logic.Logic;
 using Microsoft.VisualBasic;
 using System;
-using System.Collections.ObjectModel;
-using System.Drawing.Drawing2D;
-using System.Linq.Expressions;
-using System.Net.Sockets;
-using System.Runtime.InteropServices.JavaScript;
 using System.Windows.Forms;
-using System.Xml;
-using System.Xml.Linq;
-using winforms;
-using static System.Net.Mime.MediaTypeNames;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
+using laba1;
+using logic.IoC;
+using Microsoft.VisualBasic;
+using Ninject;
 
 namespace winforms
 {
     public partial class formandq : Form
     {
-        private Logic logic = new Logic();
+        private readonly SushnostLogic logic;
 
         public formandq()
         {
             InitializeComponent();
-            RefreshAll();
 
+            string connString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=UniversityDB;Integrated Security=True";
+
+            IKernel kernel = new StandardKernel(new SimpleConfigModule(connString));
+
+            logic = kernel.Get<SushnostLogic>();
+
+            RefreshAll();
             SData.Enabled = false;
         }
 

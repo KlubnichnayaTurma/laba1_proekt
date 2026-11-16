@@ -1,6 +1,8 @@
 ﻿
 
-namespace laba1
+using laba1;
+
+namespace model.Entities
 {
     public class Sushnost : IDomainObject
     {

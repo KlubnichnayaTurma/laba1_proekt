@@ -1,5 +1,8 @@
-﻿using System;
-using laba1;
+﻿using logic.IoC;
+using logic.Logic;
+using model.Entities;
+using Ninject;
+using System;
 
 namespace ConsoleApp
 {
@@ -7,7 +10,11 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Logic logic = new Logic();
+            string connString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=UniversityDB;Integrated Security=True";
+
+            IKernel kernel = new StandardKernel(new SimpleConfigModule(connString));
+
+            SushnostLogic logic = kernel.Get<SushnostLogic>();
 
             while (true)
             {
