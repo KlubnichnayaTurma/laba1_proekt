@@ -4,7 +4,7 @@ using laba1;
 
 namespace model.Entities
 {
-    public class Sushnost : IDomainObject
+    public class Sushnost : IEntities
     {
         public String Name { get; set; }
         public int Id { get; set; }
