@@ -52,7 +52,6 @@
             StabilityLabel.Size = new Size(67, 26);
             StabilityLabel.TabIndex = 0;
             StabilityLabel.Text = "label1";
-            StabilityLabel.Click += StabilityLabel_Click;
             // 
             // SData
             // 

@@ -1,7 +1,7 @@
 ﻿using DataAccessLayer;
-using laba1;                
-using logic.Logic;          
-using laba1.BusinessLogic;  
+using laba1;
+using logic.Logic;
+using laba1.BusinessLogic;
 using Ninject.Modules;
 using model.Entities;
 
@@ -30,7 +30,7 @@ namespace logic.IoC
             //    .ToConstant(new EntityRepository<Sushnost>(new AppDbContext()))
             //    .InSingletonScope();
 
-            Bind<SushnostLogic>()
+            Bind<SushnostModel>()
                 .ToSelf()
                 .InSingletonScope();
         }
